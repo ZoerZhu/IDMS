@@ -1,0 +1,4 @@
+[  221807ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:5173/src/router/index.js?t=1780213452853:0
+[  221918ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:5173/src/router/index.js?t=1780213452988:0
+[  222078ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:5173/src/router/index.js?t=1780213452988:0
+[  292551ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:5173/src/router/index.js?t=1780213523625:0

@@ -1,0 +1,177 @@
+<template>
+  <component
+    :is="iconComponent"
+    class="app-icon"
+    :size="size"
+    :stroke-width="strokeWidth"
+    :absolute-stroke-width="absoluteStrokeWidth"
+    aria-hidden="true"
+  />
+</template>
+
+<script setup>
+import { computed } from 'vue'
+import {
+  Activity,
+  ArrowRight,
+  BadgeCheck,
+  Bell,
+  BookOpen,
+  Bot,
+  Building2,
+  Car,
+  ChartNoAxesColumn,
+  Check,
+  CheckCheck,
+  ChevronDown,
+  ChevronUp,
+  Circle,
+  CircleAlert,
+  CircleCheck,
+  CirclePlay,
+  CircleX,
+  ClipboardCheck,
+  Clock,
+  Cloud,
+  CloudOff,
+  Database,
+  DoorOpen,
+  Download,
+  Eye,
+  FileSpreadsheet,
+  FileText,
+  FileUp,
+  HandHeart,
+  HeartHandshake,
+  House,
+  Inbox,
+  Info,
+  KeyRound,
+  LayoutDashboard,
+  Lightbulb,
+  ListChecks,
+  LoaderCircle,
+  LogIn,
+  LogOut,
+  Megaphone,
+  Menu,
+  MinusCircle,
+  Package,
+  Paperclip,
+  Pin,
+  Play,
+  Plus,
+  PlugZap,
+  Repeat2,
+  Save,
+  Send,
+  ServerCog,
+  ShieldCheck,
+  Search,
+  ShieldAlert,
+  Settings2,
+  SlidersHorizontal,
+  ThumbsUp,
+  Table2,
+  Timer,
+  Trash2,
+  Upload,
+  UserRound,
+  Users,
+  WandSparkles,
+  Workflow,
+  Wrench,
+  X,
+  Zap
+} from '@lucide/vue'
+
+const Icons = {
+  Activity,
+  ArrowRight,
+  BadgeCheck,
+  Bell,
+  BookOpen,
+  Bot,
+  Building2,
+  Car,
+  ChartNoAxesColumn,
+  Check,
+  CheckCheck,
+  ChevronDown,
+  ChevronUp,
+  Circle,
+  CircleAlert,
+  CircleCheck,
+  CirclePlay,
+  CircleX,
+  ClipboardCheck,
+  Clock,
+  Cloud,
+  CloudOff,
+  Database,
+  DoorOpen,
+  Download,
+  Eye,
+  FileSpreadsheet,
+  FileText,
+  FileUp,
+  HandHeart,
+  HeartHandshake,
+  House,
+  Inbox,
+  Info,
+  KeyRound,
+  LayoutDashboard,
+  Lightbulb,
+  ListChecks,
+  LoaderCircle,
+  LogIn,
+  LogOut,
+  Megaphone,
+  Menu,
+  MinusCircle,
+  Package,
+  Paperclip,
+  Pin,
+  Play,
+  Plus,
+  PlugZap,
+  Repeat2,
+  Save,
+  Send,
+  ServerCog,
+  ShieldCheck,
+  Search,
+  ShieldAlert,
+  Settings2,
+  SlidersHorizontal,
+  ThumbsUp,
+  Table2,
+  Timer,
+  Trash2,
+  Upload,
+  UserRound,
+  Users,
+  WandSparkles,
+  Workflow,
+  Wrench,
+  X,
+  Zap
+}
+
+const props = defineProps({
+  name: { type: String, default: 'Circle' },
+  size: { type: [Number, String], default: 18 },
+  strokeWidth: { type: [Number, String], default: 1.9 },
+  absoluteStrokeWidth: { type: Boolean, default: false }
+})
+
+const iconComponent = computed(() => Icons[props.name] || Icons.Circle)
+</script>
+
+<style scoped>
+.app-icon {
+  display: inline-block;
+  flex-shrink: 0;
+}
+</style>
